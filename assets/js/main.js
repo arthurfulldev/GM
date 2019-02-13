@@ -1,7 +1,9 @@
 $(document).ready( function (){
     $.ajax({
         url: "http://demo6292426.mockable.io/more-store",
-    }).done(function( data ) {
-       
-    });
+        success: function(data){
+            resultado = data.filter( res => res.isActive == true ).slice(0, 3)
+            console.log(resultado);
+        }
+    })
 })

@@ -4,7 +4,8 @@ let autoprefixer = require('gulp-autoprefixer');
 let minifycss =require('gulp-minify-css');
 let concatCss = require('gulp-concat-css');
 
-let uglify = require('gulp-uglify');
+//let uglify = require('gulp-uglify');
+let uglify = require('gulp-uglify-es').default;
 let concat = require('gulp-concat');
  
 sass.compiler = require('node-sass');
