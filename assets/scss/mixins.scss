@@ -1,0 +1,15 @@
+@mixin listIcon($iconSize) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .icon img{
+        width: $iconSize+px;
+        padding: 0 .5rem;
+        height: auto;
+    }
+    .description{
+        flex: 1;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+}

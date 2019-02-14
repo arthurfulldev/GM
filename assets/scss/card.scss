@@ -1,0 +1,12 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+.listCard{
+    color: blue;
+    @include listIcon(21);
+}
+
+.MCHeader{
+    color: black;
+    @include listIcon(70);
+}
